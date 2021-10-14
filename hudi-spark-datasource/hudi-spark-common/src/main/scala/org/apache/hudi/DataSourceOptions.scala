@@ -473,7 +473,7 @@ object DataSourceWriteOptions {
 
   val HIVE_SYNC_KERBEROS_PRINCIPAL: ConfigProperty[String] = ConfigProperty
     .key("hive_sync.kerberos_principal")
-    .noDefaultValue()
+    .defaultValue("")
     .withDocumentation("Hive metastore principal.")
 
   // Async Compaction - Enabled by default for MOR
