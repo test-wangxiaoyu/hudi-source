@@ -1020,7 +1020,7 @@ public class TestHiveSyncTool {
     ddlExecutor.runSQL(dropTableSql);
   }
 
-  @ParameterizedTest
+  @Test
   public void testHiveSyncOfKerberosEnvironment() throws Exception {
     // Path to the krb5 file
     String KER5_PATH = "/krb5.conf";
